@@ -171,7 +171,7 @@ class Node {
 			tempState.processMove(nextMove);
 			winner = tempState.getWinner();
 		}
-		
+
 		return winner;
 	}
 }
