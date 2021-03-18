@@ -156,12 +156,12 @@ class Node {
 		}
 	}
 
-	public int simRandomGame(int playerNo) {
+	public int simRandomGame(int playerNum) {
 		Node tempNode = new Node(this);
 		PentagoBoardState tempState = tempNode.getState();
 		int winner = tempState.getWinner();
 		
-		if (winner == 1 - playerNo) {
+		if (winner == 1 - playerNum) {
 			tempNode.getParent().setNumWon(Integer.MIN_VALUE);
 			return winner;
 		}
